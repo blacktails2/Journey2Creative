@@ -7313,6 +7313,33 @@ b {
     font-size: 14px;
     line-height: 160%; }
 
+.divider {
+  text-align: right;
+  padding-top: 48px;
+  height: 100%; }
+  .divider__line {
+    text-align: right;
+    margin-right: 25px;
+    margin-left: auto;
+    width: 1px;
+    background-color: #D1D0CE;
+    height: calc(100% - 37px); }
+
+.comment {
+  margin-top: 24px; }
+  .comment:first-child {
+    margin-top: 48px; }
+  .comment__name {
+    font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 170%; }
+  .comment__body {
+    font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 160%; }
+
 .footer {
   background-color: #EEEDEA;
   margin-top: 168px;

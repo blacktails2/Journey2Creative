@@ -270,7 +270,6 @@ b {
 		img {
 			-webkit-border-radius: 50%;
 			border-radius: 50%;
-
 			&:first-child {
 				width: 90px;
 				height: 90px;
@@ -327,7 +326,35 @@ b {
 
 	}
 }
-
+.divider{
+	text-align: right;
+	padding-top: 48px;
+	height: 100%;
+	&__line{
+		text-align: right;
+		margin-right: 25px;
+		margin-left: auto;
+		width: 1px;
+		background-color: $warmgray;
+		height: calc(100% - 37px);
+	}
+}
+.comment{
+	margin-top: 24px;
+	&:first-child{
+		margin-top: 24*2px;
+	}
+	&__name{
+		@include ffmedium;
+		font-size: 14px;
+		line-height: 170%;
+	}
+	&__body{
+		@include ffregular;
+		font-size: 13px;
+		line-height: 160%;
+	}
+}
 .footer {
 	background-color: $back;
 	margin-top: 24*7px;
