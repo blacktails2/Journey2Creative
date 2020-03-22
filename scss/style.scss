@@ -485,17 +485,17 @@ b {
 		font-size: 13px;
 		position: absolute;
 		right: 0;
-		bottom: 83px;
+		bottom: 59px;
 	}
 	&__toparrow{
 		@include ffmedium;
 		position: absolute;
 		right: 0;
-		bottom: 150px;
+		bottom: 126px;
 		font-size: 64px;
 		transition: ease all 0.3s;
 		&:hover{
-			bottom: 165px;
+			bottom: 141px;
 		}
 		a{
 			color: $main;

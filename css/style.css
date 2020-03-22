@@ -7441,16 +7441,16 @@ b {
     font-size: 13px;
     position: absolute;
     right: 0;
-    bottom: 83px; }
+    bottom: 59px; }
   .footer__toparrow {
     font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
     font-weight: 500;
     position: absolute;
     right: 0;
-    bottom: 150px;
+    bottom: 126px;
     font-size: 64px;
     transition: ease all 0.3s; }
     .footer__toparrow:hover {
-      bottom: 165px; }
+      bottom: 141px; }
     .footer__toparrow a {
       color: #30992E; }
