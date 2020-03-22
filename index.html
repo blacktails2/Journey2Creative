@@ -5,11 +5,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>つくるを旅する | 芸大生・美大生・高校生によるデザインの展示</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	<script src="js/smooth-scroll.min.js"></script>
 	<script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?qdfWifIcjAc%3D&box=1-qDpqgcsKg%3D&aa=1&ab=1" charset="utf-8"></script>
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 </head>
 
 <body>
@@ -35,9 +37,9 @@
 		<div class="container">
 			<nav class="nav">
 				<ul>
-					<li class="nav__link"><a href="#designers">Works & Designers<span class="link_arrow">↓</span></a></li>
-					<li class="nav__link"><a href="#event">Event<span class="link_arrow">↓</span></a></li>
-					<li class="nav__link"><a href="#access">Access<span class="link_arrow">↓</span></a></li>
+					<li class="nav__link"><a href="#designers">Works & Designers <span class="link_arrow">↓</span></a></li>
+					<li class="nav__link"><a href="#event">Event <span class="link_arrow">↓</span></a></li>
+					<li class="nav__link"><a href="#access">Access <span class="link_arrow">↓</span></a></li>
 				</ul>
 			</nav>
 			<div class="columns">
@@ -49,9 +51,9 @@
 						<h5 class="concept__writer">イントロダクション：安藤 真生</h5>
 						<p class="concept__body">
 							生まれが違う。育ちも違う。学校、バイト、部活、デザインにおける分野......僕たち4人は今までそれぞれの道を歩いてきました。<br>
-							人生という旅は、選択と偶然の連続だと、僕は思います。あの時、あの部活を選んでいなかったら。偶然、あの人に偶然出会っていなかったら。あの時、勇気を出してリプライを送らなかったら......そんなことの繰り返しで、今、僕がいて、これを読んでいるあなたがいます。<br><br>
+							人生という旅は、選択と偶然の連続だと、僕は思います。あの時、あの部活を選んでいなかったら。あの日、あの人に出会っていなかったら。あの時、勇気を出してリプライを送っていなかったら......そんなことの繰り返しで今僕がいて、これを読んでいるあなたがいます。<br><br>
 							<b>いま、ここに偶然4人が集まり、4人の旅路が重なりました。</b><br><br>
-							ここに4人が集まったのは偶然かもしれないけれど、それは一人ひとりの今までにしてきた選択と偶然の集積です。<br>これから4人が向かう目的地――デザインの分野か、就職先か、それとも自分自身のあり方かもしれない――はそれぞれ違うでしょう。目的地に一直線で向かうかもしれないし、いろんな寄り道があるかもしれない、そんな終わりのない旅。そんな4人の「現在地」と、「これから」を、見て、感じていただけたら幸いです。
+							4人が集まったのは偶然かもしれないけれど、それは一人ひとりの今までにしてきた選択と偶然の集積です。<br>これから4人が向かう目的地――デザインの分野か、就職先か、それとも自分自身のあり方かもしれない――はそれぞれ違うでしょう。目的地に一直線で向かうかもしれないし、いろんな寄り道があるかもしれない、そんな終わりのない旅。そんな4人の「現在地」と「これから」を、見ていただけたら幸いです。
 						</p>
 					</div>
 				</div>
@@ -63,7 +65,7 @@
 						<h3 class="forward__title">
 							こう考えた。
 						</h3>
-						<h5 class="forward__writer">展示によせて：カワセ タケヒロ (<a href="https://www.polaar.jp">Polaar</a>)</h5>
+						<h5 class="forward__writer">展示によせて：カワセ タケヒロ (<a href="https://www.polaar.jp">POLAAR</a>)</h5>
 						<p class="forward__body">
 							智に働けば角が立つ。情に棹させば流される。意地を通せば窮屈だ。とかくに人の世は住みにくい。住みにくさが高じると、安いところへ引越したくなる。どこへ越しても住みにくいと悟ったとき、詩が生れて、絵ができる。人の世を作ったのは神でもなければ鬼でもない。やはり向う三件両隣にちらちらするただの人である。ただの人が作った人の世が住みにくいからとて、越す国はあるまい。智に働けば角が立つ。情に棹させば流される。意地を通せば窮屈だ。とかくに人の世は住みにくい。住みにくさが高じると、安いところへ引越したくなる。どこへ越しても住みにくいと悟ったとき、詩が生れて、絵ができる。人の世を作ったのは神でもなければ鬼でもない。やはり向う三件両隣にちらちらするただの人である。ただの人が作った人の世が住みにくいからとて、越す国はあるまい。ああああああああああああああああああああああああああああああ
 						</p>
@@ -76,6 +78,20 @@
 		<div class="container">
 			<h2 class="designers__title">Works &<br>Desingers</h2>
 			<div class="work">
+				<div class="swiper-container">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">Slide 1</div>
+						<div class="swiper-slide">Slide 2</div>
+						<div class="swiper-slide">Slide 3</div>
+						...
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-next"></div>
+				</div>
 				<div class="columns">
 					<div class="column is-7">
 						<h3 class="work__title">W. A. Dwiggins: Inheritance and Experiment</h3>
@@ -110,16 +126,19 @@
 					</div>
 					<div class="column is-4">
 						<div class="comment">
-							<h5 class="comment__name">From: 川名 泰夢</h5>
-							<p class="comment__body">果てしない作業量ですが、ただ書体をデザインしているわけではなく、使われていく先や根本の目的など、その前後を包括的にデザインしているのが彼のポスターやインタレーションに現れています。</p>
+							<img src="img/icons/kawana_icon.jpg" alt="川名 泰夢からのコメント" class="comment__icon">
+							<h5 class="comment__name">川名 泰夢</h5>
+							<p class="comment__body">果てしない作業量ですが、ただ書体をデザインしているわけではなく、使われていく先や根本の目的など、その前後までをデザインしているのが彼のポスターやインタレーションに現れています。</p>
 						</div>
 						<div class="comment">
-							<h5 class="comment__name">From: 原木 友寿那</h5>
-							<p class="comment__body">安藤さんの展示を初めて見たときは物量に圧倒されるところから熱量を感じ、実際に書体を触ってみるとしぶとく丁寧に設計されているなと感じました。</p>
+							<img src="img/icons/haraki_icon.jpg" alt="原木 友寿那のからのコメント" class="comment__icon">
+							<h5 class="comment__name">原木 友寿那</h5>
+							<p class="comment__body">安藤さんの展示を初めて見たときは物量に圧倒されるところから熱量を感じ、実際に書体を触ってみるとしぶとく丁寧に設計されているなと感じます。</p>
 						</div>
 						<div class="comment">
-							<h5 class="comment__name">From: 畔上 陽一</h5>
-							<p class="comment__body">16,000以上のグリフを備えた超本格的な書体です。自分のクリエーションへの厳しさと、気の遠くなるような作業量をこなす地道さは僕には絶対マネできないな…と思いました。</p>
+							<img src="img/icons/azegami_icon.jpg" alt="畔上 陽一からのコメント" class="comment__icon">
+							<h5 class="comment__name">畔上 陽一</h5>
+							<p class="comment__body">16,000以上のグリフを備えた超本格的な書体です。自分のクリエーションへの厳しさと、圧倒的な作業量をこなす地道さは自分にはなかなかマネできません。尊敬です。</p>
 						</div>
 					</div>
 				</div>
@@ -156,16 +175,19 @@
 					</div>
 					<div class="column is-4">
 						<div class="comment">
-							<h5 class="comment__name">From: 安藤 真生</h5>
+							<img src="img/icons/ando_icon.jpg" alt="安藤 真生からのコメント" class="comment__icon">
+							<h5 class="comment__name">安藤 真生</h5>
 							<p class="comment__body">川名くんの卒制のはじまりを聞いて、素直にいいなあと思うと同時に、そこからこう落とし込むの？とアウトプットの緻密さや美しさにびっくりしました。このひと段落から「次」が楽しみです。</p>
 						</div>
 						<div class="comment">
-							<h5 class="comment__name">From: 原木 友寿那</h5>
+							<img src="img/icons/haraki_icon.jpg" alt="原木 友寿那のからのコメント" class="comment__icon">
+							<h5 class="comment__name">原木 友寿那</h5>
 							<p class="comment__body">やれることはなにがなんでもやるぞ、というのが見たら伝わる制作物だなと感じました。この作品を通して書かれたキャプション含めて、初めて見た人でも面白いと思う作品だと思います。</p>
 						</div>
 						<div class="comment">
-							<h5 class="comment__name">From: 畔上 陽一</h5>
-							<p class="comment__body">16,000以上のグリフを備えた超本格的な書体です。自分のクリエーションへの厳しさと、気の遠くなるような作業量をこなす地道さは僕には絶対マネできないな…と思いました。</p>
+							<img src="img/icons/azegami_icon.jpg" alt="畔上 陽一からのコメント" class="comment__icon">
+							<h5 class="comment__name">畔上 陽一</h5>
+							<p class="comment__body">純粋な造形の美しさに惹かれました。具体的な機能や用途がほとんど示されていないことが、それをさらに際立たせているのかもしれないと思いました。</p>
 						</div>
 					</div>
 				</div>
@@ -173,13 +195,12 @@
 			<div class="work">
 				<div class="columns">
 					<div class="column is-7">
-						<h3 class="work__title">W. A. Dwiggins: Inheritance and Experiment</h3>
+						<h3 class="work__title">だれかとの庭</h3>
 						<p class="work__category">
-							<span>タイプフェイス</span><span>タイポグラフィー</span><span>ブックデザイン</span><span>Web</span>
+							<span>プロダクト</span><span>インスタレーション</span>
 						</p>
 						<p class="work__detail">
-							William Addison Dwiggins (1880–1956) は20世紀前半にアメリカはボストンで活躍したデザイナーだ。私は彼の様々な分野で横断して発揮されるユーモアと、挑戦的な姿勢に感銘を抱いていたが、同時に今使うことができない書体が多くあることを残念に思っていた。<br>
-							そのため、私は彼が最後に取り組んだ書体デザインの仕事であり、シャープなエレメントを持って当時のタイポグラファーに称賛された“Falcon”のリデザインである“Roume”という書体を制作した。私は彼の書体デザインのプロセスを読み解き、私のプロセスと組み合わせながら実践し書体“Roume”とその見本帳を制作した。私はリデザインを通し、彼の本来目指した書体の再現と私自身の身体性の融合を目指した。
+							いつか見た空は、どんな形をしていたか。かつて聞いたあの鳥の声は、どんな輪郭をしていたか。あの日嗅いだ林のにおいは、どんな温度をしていたか。拾った外の形を、家の中へなじませていく。薄い境界で外と内が分けられた遊び場で、どこかの景色から拾ってきた色や形と触れ合うことのできる場所。
 						</p>
 						<div class="profile">
 							<div class="profile__picture">
@@ -192,7 +213,7 @@
 								<li class="profile__link"><a href="https://twitter.com/wolphtype">Twitter</a></li>
 							</ul>
 							<p class="profile__detail">
-								1998年岐阜県多治見市生まれ。武蔵野美術大学 視覚伝達デザイン学科卒業。在学中のアルバイトを経て、今春から日本デザインセンター オンスクリーン制作室に入社、欧文書体デザイナーを目指し勉強中。僕の知らないところで僕の書体を使ってくれる人がいたら嬉しいです。
+								1995年生まれ静岡育ち。東京藝術大学美術研究科デザイン専攻。気配を感じ取れる作品を、楽しく作る人になりたい。
 							</p>
 						</div>
 					</div>
@@ -204,16 +225,19 @@
 					</div>
 					<div class="column is-4">
 						<div class="comment">
-							<h5 class="comment__name">From: 川名 泰夢</h5>
-							<p class="comment__body">果てしない作業量ですが、ただ書体をデザインしているわけではなく、使われていく先や根本の目的など、その前後を包括的にデザインしているのが彼のポスターやインタレーションに現れています。</p>
+							<img src="img/icons/ando_icon.jpg" alt="安藤 真生からのコメント" class="comment__icon">
+							<h5 class="comment__name">安藤 真生</h5>
+							<p class="comment__body">見るだけで感じられるような、この展示の世界観を作ってくれた原木さんの作品は、コンセプトも、それを伝える言葉も自分からおおよそ出てこないものばかりで色々なことが衝撃でした。</p>
 						</div>
 						<div class="comment">
-							<h5 class="comment__name">From: 原木 友寿那</h5>
-							<p class="comment__body">安藤さんの展示を初めて見たときは物量に圧倒されるところから熱量を感じ、実際に書体を触ってみるとしぶとく丁寧に設計されているなと感じました。</p>
+							<img src="img/icons/kawana_icon.jpg" alt="川名 泰夢からのコメント" class="comment__icon">
+							<h5 class="comment__name">川名 泰夢</h5>
+							<p class="comment__body">色は使うと濁り不鮮明になるものですが、彼女の作品はむしろ配色の豊かさに溢れ、それと同時にデザインが明快になっていく面白さがあります。人の過去を想起させるデザインです。</p>
 						</div>
 						<div class="comment">
-							<h5 class="comment__name">From: 畔上 陽一</h5>
-							<p class="comment__body">16,000以上のグリフを備えた超本格的な書体です。自分のクリエーションへの厳しさと、気の遠くなるような作業量をこなす地道さは僕には絶対マネできないな…と思いました。</p>
+							<img src="img/icons/azegami_icon.jpg" alt="畔上 陽一からのコメント" class="comment__icon">
+							<h5 class="comment__name">畔上 陽一</h5>
+							<p class="comment__body">複雑な仕掛けや奇抜さがあるわけではないのですが、積み木の置かれる空間の動きも意識した造形と配色によって新しい体験を作っているのがすごいと思いました。</p>
 						</div>
 					</div>
 				</div>
@@ -226,8 +250,7 @@
 							<span>映像</span><span>ブックデザイン</span>
 						</p>
 						<p class="work__detail">
-							William Addison Dwiggins (1880–1956) は20世紀前半にアメリカはボストンで活躍したデザイナーだ。私は彼の様々な分野で横断して発揮されるユーモアと、挑戦的な姿勢に感銘を抱いていたが、同時に今使うことができない書体が多くあることを残念に思っていた。<br>
-							そのため、私は彼が最後に取り組んだ書体デザインの仕事であり、シャープなエレメントを持って当時のタイポグラファーに称賛された“Falcon”のリデザインである“Roume”という書体を制作した。私は彼の書体デザインのプロセスを読み解き、私のプロセスと組み合わせながら実践し書体“Roume”とその見本帳を制作した。私はリデザインを通し、彼の本来目指した書体の再現と私自身の身体性の融合を目指した。
+							たくさんの人と、文字のおもしろさを共有したい。そのシンプルな思いから制作したトライアル作品だ。普段は紙やスクリーンに固定されているはずの文字を重力をはじめとした物理法則に従え、転がしたり壊したりするのを観察していく（ここでは”実験”と呼んでいる）。6種類の実験は、文字と書体の造形性を可笑しみを交えて表現しているだけではなく、タイポグラフィやグラフィックデザインの知識へと繋がるようにデザインされている。また、重力を取り入れた映像表現はデザイナーの造形的なバランス感覚を可視化してみせることを意図したものでもある。文字や書体にはそれほど興味がないという人も、この作品を通して文字の世界をすこし奥まで一緒にのぞいてみてくれたら嬉しい。
 						</p>
 						<div class="profile">
 							<div class="profile__picture">
@@ -241,7 +264,7 @@
 								<li class="profile__link"><a href="https://twitter.com/wolphtype">Twitter</a></li>
 							</ul>
 							<p class="profile__detail">
-								1998年岐阜県多治見市生まれ。武蔵野美術大学 視覚伝達デザイン学科卒業。在学中のアルバイトを経て、今春から日本デザインセンター オンスクリーン制作室に入社、欧文書体デザイナーを目指し勉強中。僕の知らないところで僕の書体を使ってくれる人がいたら嬉しいです。
+								2003年埼玉県生まれ。埼玉県立伊奈学園総合高校在学中（今春から3年生）。美術部に所属。グラフィックデザイナーを目指して勉強中。デザインの仕事に興味を持ったきっかけは中学2年生の頃、自分のiPadで制作した宿題の壁新聞が評判になったこと。
 							</p>
 						</div>
 					</div>
@@ -253,16 +276,19 @@
 					</div>
 					<div class="column is-4">
 						<div class="comment">
-							<h5 class="comment__name">From: 川名 泰夢</h5>
-							<p class="comment__body">果てしない作業量ですが、ただ書体をデザインしているわけではなく、使われていく先や根本の目的など、その前後を包括的にデザインしているのが彼のポスターやインタレーションに現れています。</p>
+							<img src="img/icons/ando_icon.jpg" alt="安藤 真生からのコメント" class="comment__icon">
+							<h5 class="comment__name">安藤 真生</h5>
+							<p class="comment__body">展示を準備するなか、何度も驚かされてきた畔上くん。自分は「使えること」を重視していつもものを作ってしまうけど、人に気づかせる工夫とその実行力に感心させ続けられています。</p>
 						</div>
 						<div class="comment">
-							<h5 class="comment__name">From: 原木 友寿那</h5>
-							<p class="comment__body">安藤さんの展示を初めて見たときは物量に圧倒されるところから熱量を感じ、実際に書体を触ってみるとしぶとく丁寧に設計されているなと感じました。</p>
+							<img src="img/icons/kawana_icon.jpg" alt="川名 泰夢からのコメント" class="comment__icon">
+							<h5 class="comment__name">川名 泰夢</h5>
+							<p class="comment__body">ワンマンになりがちなデザインの畑にふふっとなるような可愛らしいユーモアを与えてくれるそんな作品です。文字の楽しさを人に伝えようと試行錯誤する温かさと説得力が彼の凄みです。</p>
 						</div>
 						<div class="comment">
-							<h5 class="comment__name">From: 畔上 陽一</h5>
-							<p class="comment__body">16,000以上のグリフを備えた超本格的な書体です。自分のクリエーションへの厳しさと、気の遠くなるような作業量をこなす地道さは僕には絶対マネできないな…と思いました。</p>
+							<img src="img/icons/haraki_icon.jpg" alt="原木 友寿那のからのコメント" class="comment__icon">
+							<h5 class="comment__name">原木 友寿那</h5>
+							<p class="comment__body">文字はちゃんと組まないと四方八方からつつかれそう。と緊張している人間なので、純粋に「楽しい」から入ることができ、書体への興味のとっかかりを掴める作品だと思います。</p>
 						</div>
 					</div>
 				</div>
@@ -332,7 +358,7 @@
 				<div class="column is-10">
 					<div class="footer">
 						<h3 class="footer__head">Notes</h3>
-						<p class="footer__notes">会場内の作品は撮影やSNSへの投稿が可能です。（三脚や自撮り棒などの使用はご遠慮ください。）／会場入口に消毒用アルコールを設置しておりますので、必ずご利用ください。／発熱や咳の症状がある方のご入場はお断りしております。／数時間おきに会場の換気を実施しております。</p>
+						<p class="footer__notes">会場内の作品は撮影やSNSへの投稿が可能です。（三脚や自撮り棒などの使用はご遠慮ください。）／会場入口に消毒用アルコールを設置しておりますので、必ずご利用ください。／発熱や咳の症状がある方のご入場はお断りしております。／数時間おきに会場の換気を実施しております。／その他、新型コロナウイルスの影響により開場時間変更などの可能性があります。詳細は公式Twitterアカウントをご覧ください。</p>
 						<h3 class="footer__head">Credit</h3>
 						<table>
 							<tr>
@@ -367,6 +393,24 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 15,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+    },
+  })
+  </script>
 </body>
 <script>
 var scroll = new SmoothScroll('a[href*="#"]');
