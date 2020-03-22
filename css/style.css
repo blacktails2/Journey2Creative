@@ -7085,7 +7085,7 @@ a.panel-block:hover, label.panel-block:hover {
     transform: rotate(359deg); } }
 
 html {
-  background-color: #EEEDEA; }
+  background-color: #F7F6F3; }
 
 body {
   font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
@@ -7102,7 +7102,7 @@ b {
 
 .caution {
   margin-top: 120px;
-  border: 1px solid #D05229;
+  border: 1px solid #D62A00;
   padding: 6px 5px;
   position: relative;
   display: flex;
@@ -7110,7 +7110,7 @@ b {
   align-items: center; }
   .caution__box {
     z-index: 0;
-    background-color: #EEEDEA;
+    background-color: #F7F6F3;
     position: absolute;
     height: 120%;
     width: 96%;
@@ -7122,12 +7122,12 @@ b {
     font-weight: 700;
     position: relative;
     font-size: 32px;
-    color: #D05229;
+    color: #D62A00;
     width: 80px;
     text-align: center; }
   .caution__title {
     position: relative;
-    color: #D05229;
+    color: #D62A00;
     font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
     font-size: 17px; }
   .caution__text {
@@ -7135,7 +7135,7 @@ b {
     font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
     font-weight: 400;
     font-size: 13px;
-    color: #D05229;
+    color: #D62A00;
     margin-top: 7px; }
 
 .introduction {
@@ -7155,7 +7155,7 @@ b {
     top: 0;
     right: 0;
     width: 70px;
-    border-top: 1px solid #D1D0CE; }
+    border-top: 1px solid #E0DFDD; }
   .nav__link {
     margin-bottom: 24px;
     display: inline-block;
@@ -7165,7 +7165,7 @@ b {
     line-height: 120%;
     transition: 0.3s ease all; }
     .nav__link a {
-      color: #66A046; }
+      color: #30992E; }
     .nav__link .link_arrow {
       font-size: 15px;
       transition: 0.3s ease all;
@@ -7190,7 +7190,7 @@ b {
     padding-left: 12px;
     margin-left: 80px;
     line-height: 130%;
-    border-left: 1px solid #D1D0CE;
+    border-left: 1px solid #E0DFDD;
     transform: translateY(-2px); }
   .concept__body {
     margin-top: 24px;
@@ -7213,10 +7213,10 @@ b {
     padding-left: 12px;
     margin-left: 80px;
     line-height: 130%;
-    border-left: 1px solid #D1D0CE;
+    border-left: 1px solid #E0DFDD;
     transform: translateY(-2px); }
     .forward__writer a {
-      color: #66A046;
+      color: #30992E;
       padding: 0 2px;
       text-decoration: underline; }
   .forward__body {
@@ -7224,7 +7224,7 @@ b {
     text-align: justify; }
 
 .designers {
-  margin-top: 96px;
+  margin-top: 48px;
   padding-top: 96px; }
   .designers__title {
     font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
@@ -7235,7 +7235,9 @@ b {
     margin-bottom: -24px; }
 
 .work {
-  margin-top: 96px; }
+  margin-top: 144px; }
+  .work:first-child {
+    margin-top: 96px; }
   .work__title {
     font-family: "DM Sans", "TazuganeGothicStdN-Heavy", sans-serif;
     font-weight: 700;
@@ -7250,7 +7252,7 @@ b {
     font-size: 12px;
     line-height: 100%; }
     .work__category span {
-      background-color: #E5E4E2;
+      background-color: #EDECE9;
       padding: 4px 5px;
       margin-right: 6px;
       -webkit-border-radius: 5px;
@@ -7303,7 +7305,7 @@ b {
     margin-right: 12px;
     transform: translateY(-6px); }
     .profile__link a {
-      color: #66A046;
+      color: #30992E;
       transition: 0.3s all ease; }
       .profile__link a:hover {
         opacity: 0.8; }
@@ -7322,7 +7324,7 @@ b {
     margin-right: 25px;
     margin-left: auto;
     width: 1px;
-    background-color: #D1D0CE;
+    background-color: #E0DFDD;
     height: calc(100% - 37px); }
 
 .comment {
@@ -7340,9 +7342,115 @@ b {
     font-size: 13px;
     line-height: 160%; }
 
+.event {
+  margin-top: 168px; }
+  .event__title {
+    font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 100%;
+    color: #333333; }
+  .event__head {
+    font-family: "DM Sans", "TazuganeGothicStdN-Heavy", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 110%;
+    color: #333333;
+    margin-top: 48px; }
+  .event__detail {
+    font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
+    font-weight: 400;
+    margin-top: 24px; }
+  .event__table {
+    margin-top: 24px;
+    margin-bottom: 48px;
+    border-spacing: 0; }
+
+.table__head {
+  width: 75px;
+  border-right: 1px solid #E0DFDD;
+  margin-right: 20px; }
+
+.table__content {
+  padding-left: 15px; }
+
+.access {
+  margin-top: 168px; }
+  .access__title {
+    font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 100%;
+    color: #333333;
+    margin-bottom: 48px; }
+  .access__photo {
+    height: 336px; }
+  .access__head {
+    font-family: "DM Sans", "TazuganeGothicStdN-Heavy", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 110%;
+    color: #333333;
+    margin-top: 24px; }
+  .access__link {
+    margin-top: 12px;
+    font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
+    font-weight: 500; }
+    .access__link a {
+      color: #30992E;
+      text-decoration: underline; }
+  .access__text {
+    margin-top: 24px; }
+
 .footer {
-  background-color: #EEEDEA;
+  background-color: #F7F6F3;
   margin-top: 168px;
-  border-top: 1px solid #D1D0CE;
-  padding-top: 48px;
-  margin-bottom: 96px; }
+  border-top: 1px solid #E0DFDD;
+  padding-top: 0;
+  margin-bottom: 48px;
+  padding-bottom: 0;
+  position: relative; }
+  .footer__head {
+    font-family: "DM Sans", "TazuganeGothicStdN-Heavy", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 110%;
+    color: #333333;
+    margin-top: 48px; }
+  .footer__notes {
+    font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 170%;
+    margin-top: 20px; }
+  .footer table {
+    margin-top: 20px; }
+  .footer .footer__credit, .footer .footer__credit--post, .footer .footer__credit--name {
+    font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 170%; }
+  .footer__credit--post {
+    width: 145px;
+    border-right: 1px solid #E0DFDD; }
+  .footer__credit--name {
+    padding-left: 15px; }
+  .footer__copyright {
+    font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    bottom: 83px; }
+  .footer__toparrow {
+    font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+    font-size: 64px;
+    transition: ease all 0.3s; }
+    .footer__toparrow:hover {
+      bottom: 165px; }
+    .footer__toparrow a {
+      color: #30992E; }

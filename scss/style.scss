@@ -3,11 +3,11 @@
 @import "../node_modules/bulma/sass/utilities/_all";
 @import url('https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap');
 
-$back: #EEEDEA;
-$scalet: #D05229;
-$warmgray: #D1D0CE;
-$lightwarm: #E5E4E2;
-$main: #66A046;
+$back: #F7F6F3;
+$scalet: #D62A00;
+$warmgray: #E0DFDD;
+$lightwarm: #EDECE9;
+$main: #30992E;
 $darkgray: #333333;
 $bold:'DM Sans',
 'TazuganeGothicStdN-Heavy',
@@ -219,7 +219,7 @@ b {
 }
 
 .designers {
-	margin-top: 24*4px;
+	margin-top: 24*2px;
 	padding-top: 24*4px;
 
 	&__title {
@@ -229,7 +229,11 @@ b {
 }
 
 .work {
-	margin-top: 24*4px;
+	margin-top: 24*6px;
+
+	&:first-child {
+		margin-top: 24*4px;
+	}
 
 	&__title {
 		@include subhead;
@@ -270,11 +274,13 @@ b {
 		img {
 			-webkit-border-radius: 50%;
 			border-radius: 50%;
+
 			&:first-child {
 				width: 90px;
 				height: 90px;
 			}
-			&:last-child{
+
+			&:last-child {
 				width: 35px;
 				height: 35px;
 				position: absolute;
@@ -326,11 +332,13 @@ b {
 
 	}
 }
-.divider{
+
+.divider {
 	text-align: right;
 	padding-top: 48px;
 	height: 100%;
-	&__line{
+
+	&__line {
 		text-align: right;
 		margin-right: 25px;
 		margin-left: auto;
@@ -339,26 +347,158 @@ b {
 		height: calc(100% - 37px);
 	}
 }
-.comment{
+
+.comment {
 	margin-top: 24px;
-	&:first-child{
+
+	&:first-child {
 		margin-top: 24*2px;
 	}
-	&__name{
+
+	&__name {
 		@include ffmedium;
 		font-size: 14px;
 		line-height: 170%;
 	}
-	&__body{
+
+	&__body {
 		@include ffregular;
 		font-size: 13px;
 		line-height: 160%;
 	}
 }
+
+.event {
+	margin-top: 24*7px;
+
+	&__title {
+		@include headline;
+	}
+
+	&__head {
+		@include subhead;
+		margin-top: 24*2px;
+	}
+
+	&__detail {
+		@include ffregular;
+		margin-top: 24px;
+	}
+
+	&__table {
+		margin-top: 24px;
+		margin-bottom: 48px;
+		border-spacing: 0;
+	}
+}
+
+.table {
+	&__head {
+		width: 75px;
+		border-right: 1px solid $warmgray;
+		margin-right: 20px;
+	}
+
+	&__content {
+		padding-left: 15px;
+	}
+}
+
+.access {
+	margin-top: 24*7px;
+
+	&__title {
+		@include headline;
+		margin-bottom: 24*2px;
+	}
+
+	&__photo {
+		height: 336px;
+	}
+
+	&__head {
+		@include subhead;
+		margin-top: 24px;
+	}
+
+	&__link {
+		margin-top: 12px;
+		@include ffmedium;
+
+		a {
+			color: $main;
+			text-decoration: underline;
+		}
+	}
+
+	&__text {
+		margin-top: 24px;
+	}
+}
+
 .footer {
 	background-color: $back;
 	margin-top: 24*7px;
 	border-top: 1px solid $warmgray;
-	padding-top: 24*2px;
-	margin-bottom: 24*4px;
+	padding-top: 0;
+	margin-bottom: 24*2px;
+	padding-bottom: 0;
+	position: relative;
+
+	&__head {
+		@include subhead;
+		margin-top: 24*2px;
+	}
+
+	&__notes {
+		@include ffregular;
+		font-size: 13px;
+		line-height: 170%;
+		margin-top: 20px;
+	}
+
+	table {
+		margin-top: 20px;
+	}
+
+	%__credit {
+		@include ffregular;
+		font-size: 13px;
+		line-height: 170%;
+	}
+
+	&__credit {
+		@extend %__credit;
+
+		&--post {
+			@extend %__credit;
+			width: 145px;
+			border-right: 1px solid $warmgray;
+		}
+		&--name{
+			@extend %__credit;
+			padding-left: 15px;
+		}
+	}
+	&__copyright{
+		@include ffregular;
+		font-size: 13px;
+		position: absolute;
+		right: 0;
+		bottom: 83px;
+	}
+	&__toparrow{
+		@include ffmedium;
+		position: absolute;
+		right: 0;
+		bottom: 150px;
+		font-size: 64px;
+		transition: ease all 0.3s;
+		&:hover{
+			bottom: 165px;
+		}
+		a{
+			color: $main;
+		}
+	}
 }
