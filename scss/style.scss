@@ -48,6 +48,13 @@ sans-serif;
 	color: $darkgray;
 }
 
+@mixin slides {
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	background-position: center;
+}
+
 html {
 	background-color: $back;
 }
@@ -252,16 +259,97 @@ b {
 
 .swiper-container {
 	width: 100%;
-	height: 360px;
+	height: 384px;
 }
 
 .swiper-pagination-bullet-active {
-	background-color: $main;
+	background-color: white;
+	opacity: 0.5;
+}
+
+.swiper-pagination {
+	text-align: left;
+	left: 15px !important;
+}
+
+.swiper-slide-next {
+	height: 340px;
+	margin-top: 22px;
+	opacity: 0.3;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
 	color: $main;
+	opacity: 0.8;
+}
+
+.ando-slide {
+	&1 {
+		@include slides;
+		background-image: url(../img/works/ando/ando-1.jpg);
+	}
+
+	&2 {
+		@include slides;
+		background-image: url(../img/works/ando/ando-2.jpg);
+	}
+
+	&3 {
+		@include slides;
+		background-image: url(../img/works/ando/ando-3.jpg);
+	}
+}
+
+.kawana-slide {
+	&1 {
+		@include slides;
+		background-image: url(../img/works/kawana/kawana-1.jpg);
+	}
+
+	&2 {
+		@include slides;
+		background-image: url(../img/works/kawana/kawana-2.jpg);
+	}
+
+	&3 {
+		@include slides;
+		background-image: url(../img/works/kawana/kawana-3.jpg);
+	}
+}
+
+.haraki-slide {
+	&1 {
+		@include slides;
+		background-image: url(../img/works/haraki/haraki-1.jpg);
+	}
+
+	&2 {
+		@include slides;
+		background-image: url(../img/works/haraki/haraki-2.jpg);
+	}
+
+	&3 {
+		@include slides;
+		background-image: url(../img/works/haraki/haraki-3.jpg);
+	}
+}
+
+.azegami-slide {
+	&1 {
+		@include slides;
+		background-image: url(../img/works/azegami/azegami-1.jpg);
+	}
+
+	&2 {
+		@include slides;
+		background-image: url(../img/works/azegami/azegami-2.jpg);
+	}
+
+	&3 {
+		@include slides;
+		background-image: url(../img/works/azegami/azegami-3.jpg);
+	}
 }
 
 .profile {
@@ -338,7 +426,7 @@ b {
 
 .divider {
 	text-align: right;
-	padding-top: 48px;
+	padding-top: 24*5px;
 	height: 100%;
 
 	&__line {
@@ -355,7 +443,7 @@ b {
 	margin-top: 24px;
 
 	&:first-child {
-		margin-top: 24*2px;
+		margin-top: 24*5px;
 	}
 
 	&__icon {
