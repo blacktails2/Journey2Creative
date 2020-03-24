@@ -1,4 +1,5 @@
 /*! bulma.io v0.7.1 | MIT License | github.com/jgthms/bulma */
+@import url(../node_modules/locomotive-scroll/dist/locomotive-scroll.min.css);
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 @-webkit-keyframes spinAround {
   from {
@@ -7084,22 +7085,21 @@ a.panel-block:hover, label.panel-block:hover {
   to {
     transform: rotate(359deg); } }
 
-html {
-  background-color: #F7F6F3; }
-
 body {
+  border-color: #F7F6F3;
+  background-color: #F7F6F3;
   font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
   color: #333333;
   font-size: 15px;
-  line-height: 160%; }
+  line-height: 160%;
+  transition: all 1s ease; }
 
 b {
   font-family: "DM Sans", "TazuganeGothicStdN-Heavy", sans-serif;
   font-weight: 700; }
 
 .top {
-  height: 110vh;
-  background-color: #A4D3D0;
+  height: 100vh;
   position: relative; }
   .top .container {
     position: relative;
@@ -7159,6 +7159,34 @@ b {
         margin-left: 16px; }
   .top__caution {
     margin-top: 60px; }
+
+.scroll {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+  .scroll .scroll__image1, .scroll .scroll__image2, .scroll .scroll__image3, .scroll .scroll__image4, .scroll .scroll__image5, .scroll .scroll__image6, .scroll .scroll__image7 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: absolute; }
+  .scroll__image1 {
+    background-image: url(../img/islandsvg-01.svg); }
+  .scroll__image2 {
+    background-image: url(../img/islandsvg-02.svg); }
+  .scroll__image3 {
+    background-image: url(../img/islandsvg-03.svg); }
+  .scroll__image4 {
+    background-image: url(../img/islandsvg-04.svg); }
+  .scroll__image5 {
+    background-image: url(../img/islandsvg-05.svg); }
+  .scroll__image6 {
+    background-image: url(../img/islandsvg-06.svg); }
+  .scroll__image7 {
+    background-image: url(../img/islandsvg-07.svg); }
 
 .caution {
   margin-top: 120px;

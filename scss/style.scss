@@ -1,6 +1,7 @@
 // 1. Import the initial variables
 @import "bulma.min";
 @import "../node_modules/bulma/sass/utilities/_all";
+@import "../node_modules/locomotive-scroll/dist/locomotive-scroll.min.css";
 @import url('https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap');
 
 $back: #F7F6F3;
@@ -55,15 +56,14 @@ sans-serif;
 	background-position: center;
 }
 
-html {
-	background-color: $back;
-}
-
 body {
+	border-color: $back;
+	background-color: $back;
 	font-family: $regular;
 	color: $darkgray;
 	font-size: 15px;
 	line-height: 160%;
+	transition: all 1s ease;
 }
 
 b {
@@ -71,54 +71,63 @@ b {
 }
 
 .top {
-	height: 110vh;
-	background-color: #A4D3D0;
+	height: 100vh;
 	position: relative;
-	.container{
+
+	.container {
 		position: relative;
 		height: 100%;
 	}
-	&__title{
+
+	&__title {
 		@include ffmedium;
 		font-size: 60px;
 		margin-top: 24*5px;
 		line-height: 100%;
 	}
-	&__subtitle{
+
+	&__subtitle {
 		@include ffmedium;
 		margin-top: 24px;
 		font-size: 16px;
 		line-height: 160%;
 	}
-	&__subenglish{
+
+	&__subenglish {
 		@include ffmedium;
 		font-size: 13px;
 		line-height: 120%;
 		margin-left: 158px;
 		margin-top: -20px;
 	}
-	&__information{
+
+	&__information {
 		position: absolute;
 		bottom: 20%;
 	}
-	&__date{
+
+	&__date {
 		font-size: 30px;
 		@include ffmedium;
 		line-height: 110%;
-		span{
+
+		span {
 			margin-left: 12px;
 		}
-		&:nth-child(2){
+
+		&:nth-child(2) {
 			margin-left: 52px;
 		}
 	}
-	&__atby{
+
+	&__atby {
 		vertical-align: top;
 		margin-top: 15px;
 		@include ffbold;
 		font-size: 18px;
 		display: inline-block;
-		&detail{
+
+		&detail {
 			@include ffmedium;
 			margin-top: 15px;
 			line-height: 150%;
@@ -128,16 +137,70 @@ b {
 			padding-left: 10px;
 			padding-bottom: 10px;
 			margin-right: 40px;
-			.yoichi{
+
+			.yoichi {
 				margin-left: 25px;
 			}
-			.yuzuna{
+
+			.yuzuna {
 				margin-left: 16px;
 			}
 		}
 	}
-	&__caution{
+
+	&__caution {
 		margin-top: 60px;
+	}
+}
+
+.scroll {
+	width: 100vw;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	%__image {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+	}
+
+	&__image1 {
+		@extend %__image;
+		background-image: url(../img/islandsvg-01.svg);
+	}
+
+	&__image2 {
+		@extend %__image;
+		background-image: url(../img/islandsvg-02.svg);
+	}
+
+	&__image3 {
+		@extend %__image;
+		background-image: url(../img/islandsvg-03.svg);
+	}
+
+	&__image4 {
+		@extend %__image;
+		background-image: url(../img/islandsvg-04.svg);
+	}
+
+	&__image5 {
+		@extend %__image;
+		background-image: url(../img/islandsvg-05.svg);
+	}
+
+	&__image6 {
+		@extend %__image;
+		background-image: url(../img/islandsvg-06.svg);
+	}
+
+	&__image7 {
+		@extend %__image;
+		background-image: url(../img/islandsvg-07.svg);
 	}
 }
 

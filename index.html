@@ -12,14 +12,26 @@
 	<script src="js/smooth-scroll.min.js"></script>
 	<script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?qdfWifIcjAc%3D&box=1-qDpqgcsKg%3D&aa=1&ab=1" charset="utf-8"></script>
 	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+	<script src="js/locomotive-scroll.min.js"></script>
 </head>
 
 <body>
 	<section class="section top">
+		<div data-scroll-container>
+			<div data-scroll-section class="scroll">
+				<div class="scroll__image1" data-scroll data-scroll-speed='0.7'></div>
+				<div class="scroll__image2" data-scroll data-scroll-speed='1'></div>
+				<div class="scroll__image3" data-scroll data-scroll-speed='1.5'></div>
+				<div class="scroll__image4" data-scroll data-scroll-speed='1.8'></div>
+				<div class="scroll__image5" data-scroll data-scroll-speed='2'></div>
+				<div class="scroll__image6" data-scroll data-scroll-speed='3'></div>
+				<div class="scroll__image7" data-scroll data-scroll-speed='4'></div>
+			</div>
+		</div>
 		<div class="container">
 			<h1 class="top__title">つくるを旅する</h1>
 			<h3 class="top__subtitle">芸大生・美大生・高校生による<br>デザインの展示</h3>
-			<h4 class="top__subenglish">an Exhibition<br>of Design by Four Students</h4>
+			<h4 class="top__subenglish">A Design Exhibition<br>by Four Students</h4>
 			<div class="top__information">
 				<h4 class="top__date">2020. 4. 17 <span>Fri.</span></h4>
 				<h4 class="top__date">→ 4. 25 Sat. 12:00 → 18:40*</h4>
@@ -81,7 +93,7 @@
 						</h3>
 						<h5 class="forward__writer">展示によせて：カワセ タケヒロ (<a href="https://www.polaar.jp">POLAAR</a>)</h5>
 						<p class="forward__body">
-							今日におけるデザインとは何か、あるいはどうあるべきかという問いに対して、万人が納得する明確な答えを成文することは困難です。設計や意匠、構想といった行いが含意されるとされていますが、美術性の水準やファインアートとの境界、目的の有無など、曖昧さが濃いことがこの語の利点であり、不利点でもあるように思います。<br><br>制作者ないし製作者としての我々は、気を抜くとすぐに、自分が取り組んでいる方向以外の〝デザイン〟を否定的に捉えてしまいがちです。そしてしばしば、自分が身を置くクラスター（群れ）における正義をもって、他のクラスターや全体にとっても同じであるべきであるかのように振る舞ってしまいます。<br><br>『つくるを旅する』展の4人の作品はそれぞれ、ある地点から見ればデザインとは呼びにくく、別の地点から見れば紛うことなきデザインであると言えるでしょう。<br><br>この展覧会は、単なる “学生の４人展” ではなく、上述の問いに対する応答であるように思います。彼らがひと所に集まることで生まれた、作品と作品の間に佇むデザインという行いのコンテクストを、感じて頂ければ幸いです。
+							今日におけるデザインとは何か、あるいはどうあるべきかという問いに対して、万人が納得する明確な答えを成文することは困難です。設計や意匠、構想といった行いを含意するとされていますが、美術性の水準やファインアートとの境界、目的の有無など、曖昧さが濃いことがこの語の利点であり、不利点でもあるように思います。<br><br>制作者ないし製作者としての我々は、気を抜くとすぐに、自分が取り組んでいる方向以外の〝デザイン〟を否定的に捉えてしまいがちです。そしてしばしば、自分が身を置くクラスター（群れ）における正義をもって、他のクラスターや全体にとっても同じであるべきかのように振る舞ってしまいます。<br><br>『つくるを旅する』展の４人の作品はそれぞれ、ある地点から見ればデザインとは呼びにくく、別の地点から見れば紛うことなきデザインであると言えるでしょう。<br><br>この展覧会は、単なる “学生の４人展” ではなく、上述の問いに対する応答であるように思います。彼らがひと所に集まることで生まれた、作品と作品の間に佇むデザインという行いのコンテクストに、目を凝らしてみてください。
 						</p>
 					</div>
 				</div>
@@ -494,9 +506,28 @@
 		},
 	})
 	</script>
+	<script>
+    (function () {
+        var scroll = new LocomotiveScroll();
+    })();
+</script>
+	<!-- 	<script>
+	window.addEventListener("scroll", function() {
+
+		//スクロールの高さを取得
+		let scroll = window.pageYOffset;
+
+		if (scroll > 4000) {
+			document.body.style.backgroundColor = 'rgba(247, 246, 243, 1)';
+		} else {
+			document.body.style.backgroundColor = 'rgba(247, 246, 243, 0)';
+		}
+
+	});
+	</script> -->
 </body>
 <script>
-var scroll = new SmoothScroll('a[href*="#"]');
+var sscroll = new SmoothScroll('a[href*="#"]');
 </script>
 
 </html>
