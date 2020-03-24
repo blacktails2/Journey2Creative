@@ -7098,7 +7098,67 @@ b {
   font-weight: 700; }
 
 .top {
-  height: 100vh; }
+  height: 110vh;
+  background-color: #A4D3D0;
+  position: relative; }
+  .top .container {
+    position: relative;
+    height: 100%; }
+  .top__title {
+    font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    margin-top: 120px;
+    line-height: 100%; }
+  .top__subtitle {
+    font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
+    font-weight: 500;
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 160%; }
+  .top__subenglish {
+    font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 120%;
+    margin-left: 158px;
+    margin-top: -20px; }
+  .top__information {
+    position: absolute;
+    bottom: 20%; }
+  .top__date {
+    font-size: 30px;
+    font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
+    font-weight: 500;
+    line-height: 110%; }
+    .top__date span {
+      margin-left: 12px; }
+    .top__date:nth-child(2) {
+      margin-left: 52px; }
+  .top__atby {
+    vertical-align: top;
+    margin-top: 15px;
+    font-family: "DM Sans", "TazuganeGothicStdN-Heavy", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    display: inline-block; }
+    .top__atbydetail {
+      font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
+      font-weight: 500;
+      margin-top: 15px;
+      line-height: 150%;
+      display: inline-block;
+      margin-left: 16px;
+      border-left: 1px solid rgba(10, 10, 10, 0.3);
+      padding-left: 10px;
+      padding-bottom: 10px;
+      margin-right: 40px; }
+      .top__atbydetail .yoichi {
+        margin-left: 25px; }
+      .top__atbydetail .yuzuna {
+        margin-left: 16px; }
+  .top__caution {
+    margin-top: 60px; }
 
 .caution {
   margin-top: 120px;

@@ -71,7 +71,74 @@ b {
 }
 
 .top {
-	height: 100vh;
+	height: 110vh;
+	background-color: #A4D3D0;
+	position: relative;
+	.container{
+		position: relative;
+		height: 100%;
+	}
+	&__title{
+		@include ffmedium;
+		font-size: 60px;
+		margin-top: 24*5px;
+		line-height: 100%;
+	}
+	&__subtitle{
+		@include ffmedium;
+		margin-top: 24px;
+		font-size: 16px;
+		line-height: 160%;
+	}
+	&__subenglish{
+		@include ffmedium;
+		font-size: 13px;
+		line-height: 120%;
+		margin-left: 158px;
+		margin-top: -20px;
+	}
+	&__information{
+		position: absolute;
+		bottom: 20%;
+	}
+	&__date{
+		font-size: 30px;
+		@include ffmedium;
+		line-height: 110%;
+		span{
+			margin-left: 12px;
+		}
+		&:nth-child(2){
+			margin-left: 52px;
+		}
+	}
+	&__atby{
+		vertical-align: top;
+		margin-top: 15px;
+		@include ffbold;
+		font-size: 18px;
+		display: inline-block;
+		&detail{
+			@include ffmedium;
+			margin-top: 15px;
+			line-height: 150%;
+			display: inline-block;
+			margin-left: 16px;
+			border-left: 1px solid rgba(10, 10, 10, 0.3);
+			padding-left: 10px;
+			padding-bottom: 10px;
+			margin-right: 40px;
+			.yoichi{
+				margin-left: 25px;
+			}
+			.yuzuna{
+				margin-left: 16px;
+			}
+		}
+	}
+	&__caution{
+		margin-top: 60px;
+	}
 }
 
 .caution {
