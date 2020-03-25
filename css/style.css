@@ -7658,16 +7658,54 @@ b {
     background-color: #E0DFDD;
     height: calc(100% - 37px); }
 
+.accordion-menu__button {
+  cursor: pointer;
+  background-color: #E5E4E2;
+  font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 9px 21px 11px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #30992E; }
+  .accordion-menu__button span {
+    transform: translateY(1px);
+    transition: ease all 0.5s;
+    margin-right: 12px; }
+  .accordion-menu__button--active span {
+    transform: translateY(1px) rotate(90deg);
+    transform-origin: center center; }
+
+.accordion-menu__contents {
+  border-left: 1px solid #E0DFDD;
+  border-bottom: 1px solid #E0DFDD;
+  padding-left: 18px;
+  padding-bottom: 24px;
+  padding-top: 32px;
+  margin-top: 22px;
+  display: none; }
+
 .comment {
   margin-top: 24px; }
+  @media screen and (max-width: 768px) {
+    .comment {
+      display: flex; } }
   .comment:first-child {
     margin-top: 72px; }
+    @media screen and (max-width: 768px) {
+      .comment:first-child {
+        margin-top: 0; } }
   .comment__icon {
     width: 20px;
     float: left;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     margin-right: 10px; }
+    @media screen and (max-width: 768px) {
+      .comment__icon {
+        width: 28px;
+        height: 28px;
+        float: none; } }
   .comment__name {
     font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
     font-weight: 500;
@@ -7679,6 +7717,9 @@ b {
     margin-top: 6px;
     font-size: 13px;
     line-height: 160%; }
+    @media screen and (max-width: 768px) {
+      .comment__body {
+        margin-top: 0; } }
 
 .event {
   margin-top: 168px; }

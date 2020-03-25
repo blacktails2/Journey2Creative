@@ -56,9 +56,10 @@ sans-serif;
 	background-position: center;
 }
 
-html{
-		background-color: $back;
+html {
+	background-color: $back;
 }
+
 body {
 	border-color: $back;
 	font-family: $regular;
@@ -71,14 +72,17 @@ body {
 b {
 	@include ffbold;
 }
-.section{
-	@include tablet-only{
+
+.section {
+	@include tablet-only {
 		padding: 3rem 85px;
 	}
-	@include mobile{
+
+	@include mobile {
 		padding: 3rem 30px;
 	}
 }
+
 .top {
 	height: 100vh;
 	position: relative;
@@ -167,6 +171,7 @@ b {
 	position: absolute;
 	left: 0;
 	top: 0;
+
 	&__img {
 		width: 100%;
 		position: absolute;
@@ -182,7 +187,8 @@ b {
 	-webkit-align-items: center;
 	align-items: center;
 	justify-content: center;
-	@include mobile{
+
+	@include mobile {
 		border: none;
 		padding: 0 30px;
 		display: block;
@@ -206,7 +212,8 @@ b {
 		color: $scalet;
 		width: 80px;
 		text-align: center;
-		@include mobile{
+
+		@include mobile {
 			text-align: left;
 			margin-left: 1px;
 			margin-bottom: 24px;
@@ -236,9 +243,11 @@ b {
 .nav {
 	padding-top: 24px;
 	text-align: right;
-	@include mobile{
+
+	@include mobile {
 		text-align: left;
 	}
+
 	ul {
 		display: flex;
 		-webkit-flex-direction: column;
@@ -253,7 +262,8 @@ b {
 		right: 0;
 		width: 70px;
 		border-top: 1px solid $warmgray;
-		@include mobile{
+
+		@include mobile {
 			right: auto;
 			left: 0;
 		}
@@ -286,12 +296,14 @@ b {
 }
 
 .concept {
-	@include tablet-only{
+	@include tablet-only {
 		margin-top: 24px;
 	}
-	@include mobile{
+
+	@include mobile {
 		margin-top: 24*3px;
 	}
+
 	&__title {
 		@include subhead;
 	}
@@ -347,9 +359,11 @@ b {
 
 .work {
 	margin-top: 24*6px;
+
 	&:first-child {
 		margin-top: 24*4px;
-		@include mobile{
+
+		@include mobile {
 			margin-top: 24px;
 		}
 	}
@@ -383,10 +397,12 @@ b {
 .swiper-container {
 	width: 100%;
 	height: 384px;
-	@include tablet-only{
+
+	@include tablet-only {
 		height: 360px;
 	}
-	@include mobile{
+
+	@include mobile {
 		height: 216px;
 		margin-left: -30px;
 		margin-right: -30px;
@@ -408,11 +424,13 @@ b {
 	height: 340px;
 	margin-top: 22px;
 	opacity: 0.3;
-	@include tablet-only{
+
+	@include tablet-only {
 		height: 330px;
 		margin-top: 15px;
 	}
-	@include mobile{
+
+	@include mobile {
 		height: 192px;
 		margin-top: 12px;
 	}
@@ -422,7 +440,8 @@ b {
 .swiper-button-prev {
 	color: $main;
 	opacity: 0.8;
-	@include mobile{
+
+	@include mobile {
 		display: none;
 	}
 }
@@ -497,21 +516,25 @@ b {
 
 .profile {
 	margin-top: 24*3px;
-	@include tablet-only{
+
+	@include tablet-only {
 		margin-top: 24*2px;
 	}
+
 	&__picture {
 		height: 110px;
 		width: 90px;
 		margin-right: 20px;
 		float: left;
 		position: relative;
-		@include tablet-only{
+
+		@include tablet-only {
 			width: 90px;
 			margin-right: 24px;
 			height: 140px;
 		}
-		@include mobile{
+
+		@include mobile {
 			margin-right: 22px;
 			height: 72px;
 			width: 70px;
@@ -524,12 +547,14 @@ b {
 			&:first-child {
 				width: 90px;
 				height: 90px;
-				@include tablet-only{
+
+				@include tablet-only {
 					width: 72px;
 					height: 72px;
 					margin-left: 17px;
 				}
-				@include mobile{
+
+				@include mobile {
 					width: 66px;
 					height: 66px;
 					margin-left: 2px;
@@ -542,23 +567,27 @@ b {
 				position: absolute;
 				top: 39px;
 				left: -1px;
-				@include mobile{
+
+				@include mobile {
 					top: 36px;
 					margin-left: -14px;
 				}
 			}
 		}
 	}
-	&__nameblock{
+
+	&__nameblock {
 		height: 72px;
 		padding-top: 5px;
 	}
+
 	&__name {
 		@include ffmedium;
 		font-size: 15px;
 		line-height: 100%;
 		float: left;
-		@include mobile{
+
+		@include mobile {
 			float: none;
 			margin-top: 8px;
 		}
@@ -570,10 +599,12 @@ b {
 		line-height: 100%;
 		margin-right: 45px;
 		float: left;
-		@include touch{
+
+		@include touch {
 			float: none;
 		}
-		@include mobile{
+
+		@include mobile {
 			margin-top: 8px;
 		}
 	}
@@ -586,10 +617,12 @@ b {
 		text-decoration: underline;
 		margin-right: 12px;
 		transform: translateY(-6px);
-		@include tablet-only{
+
+		@include tablet-only {
 			margin-top: 12px;
 		}
-		@include mobile{
+
+		@include mobile {
 			margin-top: 12px;
 		}
 
@@ -608,12 +641,14 @@ b {
 		text-align: justify;
 		font-size: 14px;
 		line-height: 160%;
-		@include tablet-only{
+
+		@include tablet-only {
 			margin-top: 8px;
 			font-size: 13px;
 			line-height: 150%;
 		}
-		@include mobile{
+
+		@include mobile {
 			margin-top: 6px;
 			font-size: 13px;
 			line-height: 150%;
@@ -625,9 +660,11 @@ b {
 	text-align: right;
 	padding-top: 70px;
 	height: 100%;
-	@include tablet-only{
+
+	@include tablet-only {
 		margin-right: -18px;
 	}
+
 	&__line {
 		text-align: right;
 		margin-right: 25px;
@@ -638,17 +675,70 @@ b {
 	}
 }
 
+.accordion-menu {
+	&__button {
+		cursor: pointer;
+		background-color: #E5E4E2;
+		@include ffmedium;
+		font-size: 15px;
+		padding: 9px 21px 11px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		color: $main;
+
+		span {
+			transform: translateY(1px);
+			transition: ease all 0.5s;
+			margin-right: 12px;
+		}
+		&--active{
+			span{
+				transform: translateY(1px) rotate(90deg);
+				transform-origin: center center;
+			}
+		}
+	}
+
+	&__contents {
+		border-left: 1px solid $warmgray;
+		border-bottom: 1px solid $warmgray;
+		padding-left: 18px;
+		padding-bottom: 24px;
+		padding-top: 32px;
+		margin-top: 22px;
+		display: none;
+	}
+}
+
+
+
 .comment {
 	margin-top: 24px;
+
+	@include mobile {
+		display: flex;
+	}
+
 	&:first-child {
 		margin-top: 24*3px;
+
+		@include mobile {
+			margin-top: 0;
+		}
 	}
+
 	&__icon {
 		width: 20px;
 		float: left;
 		-webkit-border-radius: 50%;
 		border-radius: 50%;
 		margin-right: 10px;
+
+		@include mobile {
+			width: 28px;
+			height: 28px;
+			float: none;
+		}
 	}
 
 	&__name {
@@ -662,6 +752,10 @@ b {
 		margin-top: 6px;
 		font-size: 13px;
 		line-height: 160%;
+
+		@include mobile {
+			margin-top: 0;
+		}
 	}
 }
 
@@ -711,11 +805,13 @@ b {
 
 	&__photo {
 		height: 336px;
-		@include tablet-only{
+
+		@include tablet-only {
 			width: 100%;
 			height: auto;
 		}
-		@include mobile{
+
+		@include mobile {
 			height: auto;
 			width: 100%;
 		}
@@ -740,14 +836,17 @@ b {
 		margin-top: 24px;
 	}
 }
-footer{
-	@include tablet-only{
+
+footer {
+	@include tablet-only {
 		padding: 0 85px;
 	}
-	@include mobile{
+
+	@include mobile {
 		padding: 0 30px;
 	}
 }
+
 .footer {
 	background-color: $back;
 	margin-top: 24*7px;
@@ -756,13 +855,16 @@ footer{
 	margin-bottom: 24*2px;
 	padding-bottom: 0;
 	position: relative;
-	@include touch{
+
+	@include touch {
 		padding-left: 0;
 		padding-right: 0;
 	}
-	@include mobile{
+
+	@include mobile {
 		margin-bottom: 24*5px;
 	}
+
 	&__head {
 		@include subhead;
 		margin-top: 24*2px;
@@ -787,6 +889,7 @@ footer{
 
 	&__credit {
 		@extend %__credit;
+
 		&--post {
 			@extend %__credit;
 			width: 145px;
@@ -805,7 +908,8 @@ footer{
 		position: absolute;
 		right: 0;
 		bottom: 59px;
-		@include mobile{
+
+		@include mobile {
 			position: static;
 			margin-bottom: 24px;
 		}
@@ -818,9 +922,11 @@ footer{
 		bottom: 126px;
 		font-size: 64px;
 		transition: ease all 0.3s;
-		@include mobile{
+
+		@include mobile {
 			bottom: 58px;
 		}
+
 		&:hover {
 			bottom: 141px;
 		}
