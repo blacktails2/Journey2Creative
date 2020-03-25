@@ -4,13 +4,23 @@
 @import "../node_modules/locomotive-scroll/dist/locomotive-scroll.min";
 @import url('https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap');
 
+@font-face {
+	font-family: "ArrowBold";
+	src: url("../fonts/Tsukuarrow-Bold.woff2");
+}
+
+@font-face {
+	font-family: "ArrowLight";
+	src: url("../fonts/Tsukuarrow-Regular.woff2");
+}
+
 $back: #F7F6F3;
 $scalet: #D62A00;
 $warmgray: #E0DFDD;
 $lightwarm: #EDECE9;
 $main: #30992E;
 $darkgray: #333333;
-$bold:'DM Sans',
+$bold: 'DM Sans',
 'TazuganeGothicStdN-Heavy',
 sans-serif;
 $medium: 'DM Sans',
@@ -72,22 +82,38 @@ body {
 b {
 	@include ffbold;
 }
-.back{
-	&__1{
+
+.arrow-bold {
+	font-family: 'ArrowBold';
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.arrow-light {
+	font-family: 'ArrowLight';
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.back {
+	&__1 {
 		margin-top: 24*5px;
 		margin-left: -10%;
-		@include tablet-only{
+
+		@include tablet-only {
 			margin-top: 12px;
 			margin-left: auto;
 			width: 90%;
 			margin-bottom: -24*3px;
 		}
 	}
-	&__2{
+
+	&__2 {
 		height: 50%;
 		transform: translateX(40%);
 	}
 }
+
 .section {
 	@include tablet-only {
 		padding: 3rem 85px;
@@ -99,7 +125,7 @@ b {
 }
 
 .top {
-	height: 100vh;
+	height: 110vh;
 	position: relative;
 
 	.container {
@@ -139,13 +165,25 @@ b {
 		@include ffmedium;
 		line-height: 110%;
 
-		span {
-			margin-left: 12px;
+		@include mobile {
+			font-size: 25px;
 		}
+	}
 
-		&:nth-child(2) {
-			margin-left: 52px;
+	&__time {
+		font-size: 25px;
+		@include ffregular;
+		margin-top: 3px;
+
+		@include mobile {
+			font-size: 21px;
 		}
+	}
+
+	&__lastday {
+		font-size: 13px;
+		display: inline-block;
+		transform: translateY(-1px);
 	}
 
 	&__atby {
@@ -183,13 +221,140 @@ b {
 
 .illust {
 	width: 100vw;
+	height: 110vh;
 	position: absolute;
 	left: 0;
 	top: 0;
 
-	&__img {
+	&__image {
 		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
 		position: absolute;
+		background-position: center;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+
+		&1 {
+			@extend .illust__image;
+			background-image: url('../img/1500/islands-01.svg');
+			@include mobile{
+				background-image: url('../img/iphone/islands-01.svg');
+			}
+			@include tablet-only{
+				background-image: url('../img/tablet/islands-01.svg');
+			}
+			@include desktop-only{
+				background-image: url(../img/900/islands-01.svg);
+			}
+			@include widescreen-only{
+				background-image: url(../img/1200/islands-01.svg);
+			}
+		}
+
+		&2 {
+			@extend .illust__image;
+			background-image: url('../img/1500/islands-02.svg');
+			@include mobile{
+				background-image: url('../img/iphone/islands-02.svg');
+			}
+			@include tablet-only{
+				background-image: url('../img/tablet/islands-02.svg');
+			}
+			@include desktop-only{
+				background-image: url(../img/900/islands-02.svg);
+			}
+			@include widescreen-only{
+				background-image: url(../img/1200/islands-02.svg);
+			}
+		}
+
+		&3 {
+			@extend .illust__image;
+			background-image: url('../img/1500/islands-03.svg');
+			@include mobile{
+				background-image: url('../img/iphone/islands-03.svg');
+			}
+			@include tablet-only{
+				background-image: url('../img/tablet/islands-03.svg');
+			}
+			@include desktop-only{
+				background-image: url(../img/900/islands-03.svg);
+			}
+			@include widescreen-only{
+				background-image: url(../img/1200/islands-03.svg);
+			}
+		}
+
+		&4 {
+			@extend .illust__image;
+			background-image: url('../img/1500/islands-04.svg');
+			@include mobile{
+				background-image: url('../img/iphone/islands-04.svg');
+			}
+			@include tablet-only{
+				background-image: url('../img/tablet/islands-04.svg');
+			}
+			@include desktop-only{
+				background-image: url(../img/900/islands-04.svg);
+			}
+			@include widescreen-only{
+				background-image: url(../img/1200/islands-04.svg);
+			}
+		}
+
+		&5 {
+			@extend .illust__image;
+			background-image: url('../img/1500/islands-05.svg');
+			@include mobile{
+				background-image: url('../img/iphone/islands-05.svg');
+			}
+			@include tablet-only{
+				background-image: url('../img/tablet/islands-05.svg');
+			}
+			@include desktop-only{
+				background-image: url(../img/900/islands-05.svg);
+			}
+			@include widescreen-only{
+				background-image: url(../img/1200/islands-05.svg);
+			}
+		}
+
+		&6 {
+			@extend .illust__image;
+			background-image: url('../img/1500/islands-06.svg');
+			@include mobile{
+				background-image: url('../img/iphone/islands-06.svg');
+			}
+			@include tablet-only{
+				background-image: url('../img/tablet/islands-06.svg');
+			}
+			@include desktop-only{
+				background-image: url(../img/900/islands-06.svg);
+			}
+			@include widescreen-only{
+				background-image: url(../img/1200/islands-06.svg);
+			}
+		}
+
+		&7 {
+			@extend .illust__image;
+			background-image: url('../img/1500/islands-07.svg');
+			@include mobile{
+				background-image: url('../img/iphone/islands-07.svg');
+			}
+			@include tablet-only{
+				background-image: url('../img/tablet/islands-07.svg');
+			}
+			@include desktop-only{
+				background-image: url(../img/900/islands-07.svg);
+			}
+			@include widescreen-only{
+				background-image: url(../img/1200/islands-07.svg);
+			}
+		}
 	}
 }
 
@@ -401,7 +566,8 @@ b {
 			margin-right: 6px;
 			-webkit-border-radius: 5px;
 			border-radius: 5px;
-			@include mobile{
+
+			@include mobile {
 				margin-top: 6px;
 			}
 		}
@@ -438,9 +604,11 @@ b {
 	text-align: left;
 	left: 15px !important;
 }
-.swiper-slide{
+
+.swiper-slide {
 	transition: ease all 0.5s;
 }
+
 .swiper-slide-next {
 	height: 340px;
 	margin-top: 22px;
@@ -712,8 +880,9 @@ b {
 			transition: ease all 0.5s;
 			margin-right: 12px;
 		}
-		&--active{
-			span{
+
+		&--active {
+			span {
 				transform: translateY(1px) rotate(90deg);
 				transform-origin: center center;
 			}

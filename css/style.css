@@ -7132,6 +7132,14 @@ html.has-scroll-dragging {
   cursor: -webkit-grabbing;
   cursor: grabbing; }
 
+@font-face {
+  font-family: "ArrowBold";
+  src: url("../fonts/Tsukuarrow-Bold.woff2"); }
+
+@font-face {
+  font-family: "ArrowLight";
+  src: url("../fonts/Tsukuarrow-Regular.woff2"); }
+
 html {
   background-color: #F7F6F3; }
 
@@ -7146,6 +7154,16 @@ body {
 b {
   font-family: "DM Sans", "TazuganeGothicStdN-Heavy", sans-serif;
   font-weight: 700; }
+
+.arrow-bold {
+  font-family: 'ArrowBold';
+  margin-left: 3px;
+  margin-right: 3px; }
+
+.arrow-light {
+  font-family: 'ArrowLight';
+  margin-left: 3px;
+  margin-right: 3px; }
 
 .back__1 {
   margin-top: 120px;
@@ -7170,7 +7188,7 @@ b {
     padding: 3rem 30px; } }
 
 .top {
-  height: 100vh;
+  height: 110vh;
   position: relative; }
   .top .container {
     position: relative;
@@ -7202,10 +7220,21 @@ b {
     font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
     font-weight: 500;
     line-height: 110%; }
-    .top__date span {
-      margin-left: 12px; }
-    .top__date:nth-child(2) {
-      margin-left: 52px; }
+    @media screen and (max-width: 768px) {
+      .top__date {
+        font-size: 25px; } }
+  .top__time {
+    font-size: 25px;
+    font-family: "DM Sans", "TazuganeGothicStdN-Book", sans-serif;
+    font-weight: 400;
+    margin-top: 3px; }
+    @media screen and (max-width: 768px) {
+      .top__time {
+        font-size: 21px; } }
+  .top__lastday {
+    font-size: 13px;
+    display: inline-block;
+    transform: translateY(-1px); }
   .top__atby {
     vertical-align: top;
     margin-top: 15px;
@@ -7233,12 +7262,118 @@ b {
 
 .illust {
   width: 100vw;
+  height: 110vh;
   position: absolute;
   left: 0;
   top: 0; }
-  .illust__img {
+  .illust__image, .illust__image1, .illust__image2, .illust__image3, .illust__image4, .illust__image5, .illust__image6, .illust__image7 {
     width: 100%;
-    position: absolute; }
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-position: center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .illust__image1 {
+      background-image: url("../img/1500/islands-01.svg"); }
+      @media screen and (max-width: 768px) {
+        .illust__image1 {
+          background-image: url("../img/iphone/islands-01.svg"); } }
+      @media screen and (min-width: 769px) and (max-width: 1087px) {
+        .illust__image1 {
+          background-image: url("../img/tablet/islands-01.svg"); } }
+      @media screen and (min-width: 1088px) and (max-width: 1279px) {
+        .illust__image1 {
+          background-image: url(../img/900/islands-01.svg); } }
+      @media screen and (min-width: 1280px) and (max-width: 1471px) {
+        .illust__image1 {
+          background-image: url(../img/1200/islands-01.svg); } }
+    .illust__image2 {
+      background-image: url("../img/1500/islands-02.svg"); }
+      @media screen and (max-width: 768px) {
+        .illust__image2 {
+          background-image: url("../img/iphone/islands-02.svg"); } }
+      @media screen and (min-width: 769px) and (max-width: 1087px) {
+        .illust__image2 {
+          background-image: url("../img/tablet/islands-02.svg"); } }
+      @media screen and (min-width: 1088px) and (max-width: 1279px) {
+        .illust__image2 {
+          background-image: url(../img/900/islands-02.svg); } }
+      @media screen and (min-width: 1280px) and (max-width: 1471px) {
+        .illust__image2 {
+          background-image: url(../img/1200/islands-02.svg); } }
+    .illust__image3 {
+      background-image: url("../img/1500/islands-03.svg"); }
+      @media screen and (max-width: 768px) {
+        .illust__image3 {
+          background-image: url("../img/iphone/islands-03.svg"); } }
+      @media screen and (min-width: 769px) and (max-width: 1087px) {
+        .illust__image3 {
+          background-image: url("../img/tablet/islands-03.svg"); } }
+      @media screen and (min-width: 1088px) and (max-width: 1279px) {
+        .illust__image3 {
+          background-image: url(../img/900/islands-03.svg); } }
+      @media screen and (min-width: 1280px) and (max-width: 1471px) {
+        .illust__image3 {
+          background-image: url(../img/1200/islands-03.svg); } }
+    .illust__image4 {
+      background-image: url("../img/1500/islands-04.svg"); }
+      @media screen and (max-width: 768px) {
+        .illust__image4 {
+          background-image: url("../img/iphone/islands-04.svg"); } }
+      @media screen and (min-width: 769px) and (max-width: 1087px) {
+        .illust__image4 {
+          background-image: url("../img/tablet/islands-04.svg"); } }
+      @media screen and (min-width: 1088px) and (max-width: 1279px) {
+        .illust__image4 {
+          background-image: url(../img/900/islands-04.svg); } }
+      @media screen and (min-width: 1280px) and (max-width: 1471px) {
+        .illust__image4 {
+          background-image: url(../img/1200/islands-04.svg); } }
+    .illust__image5 {
+      background-image: url("../img/1500/islands-05.svg"); }
+      @media screen and (max-width: 768px) {
+        .illust__image5 {
+          background-image: url("../img/iphone/islands-05.svg"); } }
+      @media screen and (min-width: 769px) and (max-width: 1087px) {
+        .illust__image5 {
+          background-image: url("../img/tablet/islands-05.svg"); } }
+      @media screen and (min-width: 1088px) and (max-width: 1279px) {
+        .illust__image5 {
+          background-image: url(../img/900/islands-05.svg); } }
+      @media screen and (min-width: 1280px) and (max-width: 1471px) {
+        .illust__image5 {
+          background-image: url(../img/1200/islands-05.svg); } }
+    .illust__image6 {
+      background-image: url("../img/1500/islands-06.svg"); }
+      @media screen and (max-width: 768px) {
+        .illust__image6 {
+          background-image: url("../img/iphone/islands-06.svg"); } }
+      @media screen and (min-width: 769px) and (max-width: 1087px) {
+        .illust__image6 {
+          background-image: url("../img/tablet/islands-06.svg"); } }
+      @media screen and (min-width: 1088px) and (max-width: 1279px) {
+        .illust__image6 {
+          background-image: url(../img/900/islands-06.svg); } }
+      @media screen and (min-width: 1280px) and (max-width: 1471px) {
+        .illust__image6 {
+          background-image: url(../img/1200/islands-06.svg); } }
+    .illust__image7 {
+      background-image: url("../img/1500/islands-07.svg"); }
+      @media screen and (max-width: 768px) {
+        .illust__image7 {
+          background-image: url("../img/iphone/islands-07.svg"); } }
+      @media screen and (min-width: 769px) and (max-width: 1087px) {
+        .illust__image7 {
+          background-image: url("../img/tablet/islands-07.svg"); } }
+      @media screen and (min-width: 1088px) and (max-width: 1279px) {
+        .illust__image7 {
+          background-image: url(../img/900/islands-07.svg); } }
+      @media screen and (min-width: 1280px) and (max-width: 1471px) {
+        .illust__image7 {
+          background-image: url(../img/1200/islands-07.svg); } }
 
 .caution {
   margin-top: 120px;
