@@ -27,7 +27,7 @@
 			<div class="illust__image7"></div>
 		</div>
 		<div class="container">
-			<h1 class="top__title">つくるを旅する</h1>
+			<img src="" alt="つくるを旅する" class="top__title">
 			<h3 class="top__subtitle">芸大生・美大生・高校生による<br>デザインの展示</h3>
 			<h4 class="top__subenglish">A Design Exhibition<br>by Four Students</h4>
 			<div class="top__information">
@@ -729,6 +729,15 @@ smooth: true
 </body>
 <script>
 var sscroll = new SmoothScroll('a[href*="#"]');
+</script>
+<script>
+var images = [
+	'img/logo/haraki.png',
+	'img/logo/kawana.svg',
+	'img/logo/azegami.svg'
+];
+var randImg = images[Math.floor(Math.random() * images.length)];
+$('.top__title').attr('src', randImg);
 </script>
 
 </html>

@@ -134,10 +134,22 @@ b {
 	}
 
 	&__title {
-		@include ffmedium;
-		font-size: 60px;
-		margin-top: 24*5px;
-		line-height: 100%;
+		margin-top: 24*2px;
+		margin-bottom: -70px;
+		margin-left: -20px;
+		height: 190px;
+		@include tablet-only{
+			height: 170px;
+			margin-bottom: -50px;
+			margin-left: -20px;
+		}
+		@include mobile{
+			height: auto;
+			width: 100%;
+			margin-left: -10px;
+			margin-bottom: -30px;
+			margin-top: 24*3px;
+		}
 	}
 
 	&__subtitle {
@@ -157,7 +169,13 @@ b {
 
 	&__information {
 		position: absolute;
-		bottom: 20%;
+		bottom: -10%;
+		@include tablet-only{
+			bottom: -5%;
+		}
+		@include mobile{
+			bottom: 0;
+		}
 	}
 
 	&__date {
@@ -359,7 +377,7 @@ b {
 }
 
 .caution {
-	margin-top: 24*5px;
+	margin-top: 24*8px;
 	border: 1px solid $scalet;
 	padding: 6px 5px;
 	position: relative;
@@ -367,8 +385,11 @@ b {
 	-webkit-align-items: center;
 	align-items: center;
 	justify-content: center;
-
+	@include tablet-only{
+		margin-top: 24*4px;
+	}
 	@include mobile {
+		margin-top: 24*2px;
 		border: none;
 		padding: 0 30px;
 		display: block;

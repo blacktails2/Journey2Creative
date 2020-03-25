@@ -7194,11 +7194,22 @@ b {
     position: relative;
     height: 100%; }
   .top__title {
-    font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
-    font-weight: 500;
-    font-size: 60px;
-    margin-top: 120px;
-    line-height: 100%; }
+    margin-top: 48px;
+    margin-bottom: -70px;
+    margin-left: -20px;
+    height: 190px; }
+    @media screen and (min-width: 769px) and (max-width: 1087px) {
+      .top__title {
+        height: 170px;
+        margin-bottom: -50px;
+        margin-left: -20px; } }
+    @media screen and (max-width: 768px) {
+      .top__title {
+        height: auto;
+        width: 100%;
+        margin-left: -10px;
+        margin-bottom: -30px;
+        margin-top: 72px; } }
   .top__subtitle {
     font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
     font-weight: 500;
@@ -7214,7 +7225,13 @@ b {
     margin-top: -20px; }
   .top__information {
     position: absolute;
-    bottom: 20%; }
+    bottom: -10%; }
+    @media screen and (min-width: 769px) and (max-width: 1087px) {
+      .top__information {
+        bottom: -5%; } }
+    @media screen and (max-width: 768px) {
+      .top__information {
+        bottom: 0; } }
   .top__date {
     font-size: 30px;
     font-family: "DM Sans", "TazuganeGothicStdN-Medium", sans-serif;
@@ -7376,7 +7393,7 @@ b {
           background-image: url(../img/1200/islands-07.svg); } }
 
 .caution {
-  margin-top: 120px;
+  margin-top: 192px;
   border: 1px solid #D62A00;
   padding: 6px 5px;
   position: relative;
@@ -7384,8 +7401,12 @@ b {
   -webkit-align-items: center;
   align-items: center;
   justify-content: center; }
+  @media screen and (min-width: 769px) and (max-width: 1087px) {
+    .caution {
+      margin-top: 96px; } }
   @media screen and (max-width: 768px) {
     .caution {
+      margin-top: 48px;
       border: none;
       padding: 0 30px;
       display: block; } }
