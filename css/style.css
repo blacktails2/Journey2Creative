@@ -7137,7 +7137,7 @@ html {
 
 body {
   border-color: #F7F6F3;
-  font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
+  font-family: "DM Sans", "TazuganeGothicStdN-Book", sans-serif;
   color: #333333;
   font-size: 15px;
   line-height: 160%;
@@ -7269,7 +7269,7 @@ b {
     font-size: 17px; }
   .caution__text {
     position: relative;
-    font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
+    font-family: "DM Sans", "TazuganeGothicStdN-Book", sans-serif;
     font-weight: 400;
     font-size: 13px;
     color: #D62A00;
@@ -7601,7 +7601,7 @@ b {
         float: none;
         margin-top: 8px; } }
   .profile__english {
-    font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
+    font-family: "DM Sans", "TazuganeGothicStdN-Book", sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 100%;
@@ -7615,7 +7615,7 @@ b {
         margin-top: 8px; } }
   .profile__link {
     display: inline-block;
-    font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
+    font-family: "DM Sans", "TazuganeGothicStdN-Book", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
@@ -7634,7 +7634,7 @@ b {
       .profile__link a:hover {
         opacity: 0.8; }
   .profile__detail {
-    font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
+    font-family: "DM Sans", "TazuganeGothicStdN-Book", sans-serif;
     font-weight: 400;
     text-align: justify;
     font-size: 14px;
@@ -7719,7 +7719,7 @@ b {
     font-size: 14px;
     line-height: 150%; }
   .comment__body {
-    font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
+    font-family: "DM Sans", "TazuganeGothicStdN-Book", sans-serif;
     font-weight: 400;
     margin-top: 6px;
     font-size: 13px;
@@ -7744,7 +7744,7 @@ b {
     color: #333333;
     margin-top: 48px; }
   .event__detail {
-    font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
+    font-family: "DM Sans", "TazuganeGothicStdN-Book", sans-serif;
     font-weight: 400;
     margin-top: 24px; }
   .event__table {
@@ -7827,7 +7827,7 @@ b {
     color: #333333;
     margin-top: 48px; }
   .footer__notes {
-    font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
+    font-family: "DM Sans", "TazuganeGothicStdN-Book", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 170%;
@@ -7835,7 +7835,7 @@ b {
   .footer table {
     margin-top: 20px; }
   .footer .footer__credit, .footer .footer__credit--post, .footer .footer__credit--name {
-    font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
+    font-family: "DM Sans", "TazuganeGothicStdN-Book", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 170%; }
@@ -7845,7 +7845,7 @@ b {
   .footer__credit--name {
     padding-left: 15px; }
   .footer__copyright {
-    font-family: "DM Sans", "TazuganeGothicStdN-Regular", sans-serif;
+    font-family: "DM Sans", "TazuganeGothicStdN-Book", sans-serif;
     font-weight: 400;
     font-size: 13px;
     position: absolute;
