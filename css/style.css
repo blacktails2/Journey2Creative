@@ -7397,11 +7397,15 @@ b {
     font-size: 12px;
     line-height: 100%; }
     .work__category span {
+      display: inline-block;
       background-color: #EDECE9;
       padding: 4px 5px;
       margin-right: 6px;
       -webkit-border-radius: 5px;
       border-radius: 5px; }
+      @media screen and (max-width: 768px) {
+        .work__category span {
+          margin-top: 6px; } }
   .work__detail {
     margin-top: 36px;
     text-align: justify; }
@@ -7426,6 +7430,9 @@ b {
 .swiper-pagination {
   text-align: left;
   left: 15px !important; }
+
+.swiper-slide {
+  transition: ease all 0.5s; }
 
 .swiper-slide-next {
   height: 340px;

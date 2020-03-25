@@ -380,11 +380,15 @@ b {
 		line-height: 100%;
 
 		span {
+			display: inline-block;
 			background-color: $lightwarm;
 			padding: 4px 5px;
 			margin-right: 6px;
 			-webkit-border-radius: 5px;
 			border-radius: 5px;
+			@include mobile{
+				margin-top: 6px;
+			}
 		}
 	}
 
@@ -419,7 +423,9 @@ b {
 	text-align: left;
 	left: 15px !important;
 }
-
+.swiper-slide{
+	transition: ease all 0.5s;
+}
 .swiper-slide-next {
 	height: 340px;
 	margin-top: 22px;
