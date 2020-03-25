@@ -7147,6 +7147,20 @@ b {
   font-family: "DM Sans", "TazuganeGothicStdN-Heavy", sans-serif;
   font-weight: 700; }
 
+.back__1 {
+  margin-top: 120px;
+  margin-left: -10%; }
+  @media screen and (min-width: 769px) and (max-width: 1087px) {
+    .back__1 {
+      margin-top: 12px;
+      margin-left: auto;
+      width: 90%;
+      margin-bottom: -72px; } }
+
+.back__2 {
+  height: 50%;
+  transform: translateX(40%); }
+
 @media screen and (min-width: 769px) and (max-width: 1087px) {
   .section {
     padding: 3rem 85px; } }

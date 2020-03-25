@@ -72,7 +72,22 @@ body {
 b {
 	@include ffbold;
 }
-
+.back{
+	&__1{
+		margin-top: 24*5px;
+		margin-left: -10%;
+		@include tablet-only{
+			margin-top: 12px;
+			margin-left: auto;
+			width: 90%;
+			margin-bottom: -24*3px;
+		}
+	}
+	&__2{
+		height: 50%;
+		transform: translateX(40%);
+	}
+}
 .section {
 	@include tablet-only {
 		padding: 3rem 85px;
